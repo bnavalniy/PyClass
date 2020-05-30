@@ -1,0 +1,19 @@
+# Dynamic
+int_var = 2
+print("int_var =", int_var, "type is:", type(int_var))
+float_var = 2.5
+print("float_var =", float_var, "type is:", type(float_var))
+str_var = 'Ring'
+print("str_var =", str_var, "type is:", type(str_var))
+bool_var = True
+print("bool_var =", bool_var, "type is:", type(bool_var))
+list_var = [2, 2.3, "Ring", True]
+print("list_var =", list_var, "type is:", type(list_var))
+list_var.append("NextElement")
+print("list_var with new element=", list_var, "type is:", type(list_var))
+# Input
+print("INPUT")
+my_int_input = int(input("Enter Integer:"))
+print("my_int_input =", my_int_input, "type is:", type(my_int_input))
+my_string_input = input("Enter some string:")
+print("my_string_input =", my_string_input, "type is:", type(my_string_input))
