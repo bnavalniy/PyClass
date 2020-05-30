@@ -1,11 +1,13 @@
-seconds_input = float(input("Enter time > 1000 in seconds:"))
+seconds_input = int(input("Enter time in seconds:"))
 # Hours
-float_hours = seconds_input / 3600
+hours = seconds_input // 3600
 # Minutes
-float_minutes = seconds_input / 60
+minutes = (seconds_input // 60) - (hours * 60)
+seconds = seconds_input % 60
 time_message = (
-    f"{int(float_hours)}h:"
-    f"{int(float_minutes)}m:"
-    f"{int(seconds_input)}s"
+    f"{hours:02}:"
+    f"{minutes:02}:"
+    f"{seconds:02}"
 )
 print(time_message)
+print(f"{hours:02}:{minutes:02}:{seconds:02}")
