@@ -10,4 +10,5 @@ else:
             break
         elif num < my_list[-1]:
             my_list.insert(len(my_list), num)
+            break
 print(my_list)
