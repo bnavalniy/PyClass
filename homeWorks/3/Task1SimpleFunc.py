@@ -11,5 +11,5 @@ def my_sum(arg_1, arg_2):
         return
 
 
-x, y = (input("Введите два числа через пробел:").split())
+x, y = (input("Введите два числа через пробел:").split(" "))
 print(f"Result is ", my_sum(int(x), int(y)))
